@@ -5,11 +5,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    color: black;
+    color: var(--preto);
     font-family: 'Montserrat';
+}
+:root {
+    --azul-escuro01: darkblue;
+    --cor-primaria: blue;
+    --cor-bg: rgb(233, 235, 254);
+    --branco: white;
+    --preto: black;
+    --branco02: gainsboro;
 }
 body {
     min-height: 100vh;
     max-width: 100vw;
-    background-color: rgb(233, 235, 254);
+    background-color: var(--cor-bg);
 }

@@ -23,13 +23,14 @@ header.menu-open{
     top: 50%;
     transform: translateY(-50%);
     
-    background-color: darkblue;
+    background-color: var(--azul-escuro01);
+}
 .espaco-logo.visible {
     z-index: 0;
 }
 
 h1#nome-comercial {
-    color: white;
+    color: var(--branco);
     font-weight: 500;
     font-size: 1rem;
 }
@@ -44,13 +45,13 @@ nav#menu-desktop {
 nav#menu-desktop ul {
     list-style-type: none;
     display: flex;
-    background-color: darkblue;
+    background-color: var(--azul-escuro01);
     border-radius: 8px;
 }
 nav#menu-desktop ul li {
     padding: .5rem 1rem;
     border: 1px solid transparent;
-    color: white;
+    color: var(--branco);
     border-radius: 8px;
 }
 nav#menu-desktop ul li:hover {

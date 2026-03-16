@@ -4,7 +4,7 @@ h2#titulo-pagina {
     font-weight: 200;
     font-size: 2rem;
     margin: 1rem 0 1.2rem;
-    color: black;
+    color: var(--preto);
 }
 .container-quadros{
     height: 70vh;
@@ -24,19 +24,19 @@ h2#titulo-pagina {
     width: max(70%, 300px);
     height: 42vh;
     min-height: 300px;
-    background-color: blue;
+    background-color: var(--cor-primaria);
 }
 #quadro2-jogos {
     width: max(60%, 260px);
     height: max(28vh, 200px);
     border-radius: 0 0 8px 8px;
-    background-color: darkblue;
+    background-color: var(--azul-escuro01);
 }
 .inf-jogo {
     text-align: center;
     font-size: 1rem;
     font-weight: 500;
-    color: white;
+    color: var(--branco);
 }
 .quadro-cards-times {
     height: 80%;
@@ -54,7 +54,7 @@ h2#titulo-pagina {
 
     border: 1px solid transparent;
     border-radius: 8px;
-    background-color: gainsboro;
+    background-color: var(--branco02);
 }
 .card-time img {
     max-height: 60%;
@@ -70,7 +70,7 @@ h2#titulo-pagina {
     text-align: center;
 }
 .container-nome-times p {
-    color: white;
+    color: var(--branco);
 }
 .versus {
     font-weight: 800;
