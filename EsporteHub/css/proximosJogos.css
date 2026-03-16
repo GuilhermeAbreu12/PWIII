@@ -1,0 +1,77 @@
+h2#titulo-pagina {
+    font-family: 'Bebas Neue';
+    text-align: center;
+    font-weight: 200;
+    font-size: 2rem;
+    margin: 1rem 0 1.2rem;
+    color: var(--preto);
+}
+.container-quadros{
+    height: 70vh;
+    width: min(60%, 600px);
+    justify-self: center;
+}
+.quadro-jogos{
+    padding: .8rem;
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    justify-self: center;
+}
+#quadro1-jogos {
+    width: max(70%, 300px);
+    height: 42vh;
+    min-height: 300px;
+    background-color: var(--cor-primaria);
+}
+#quadro2-jogos {
+    width: max(60%, 260px);
+    height: max(28vh, 200px);
+    border-radius: 0 0 8px 8px;
+    background-color: var(--azul-escuro01);
+}
+.inf-jogo {
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--branco);
+}
+.quadro-cards-times {
+    height: 80%;
+    width: 100%;
+    gap: .8rem;
+    display: flex;
+    flex-direction: row;
+}
+.card-time {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid transparent;
+    border-radius: 8px;
+    background-color: var(--branco02);
+}
+.card-time img {
+    max-height: 60%;
+}
+#quadro2-jogos .quadro-cards-times {
+    height: 65%;
+}
+.container-nome-times {
+    width: 100%;
+    padding: 0 5%;
+    display: grid;
+    grid-template-columns: 3fr 1fr 3fr;
+    text-align: center;
+}
+.container-nome-times p {
+    color: var(--branco);
+}
+.versus {
+    font-weight: 800;
+}
