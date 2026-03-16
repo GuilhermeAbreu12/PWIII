@@ -1,8 +1,0 @@
-@media (min-width: 580px){
-    nav#menu-desktop {
-        display: flex;
-    }
-    #menu-mobile {
-        display: none;
-    }
-}
