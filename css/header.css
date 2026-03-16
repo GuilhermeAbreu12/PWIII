@@ -33,6 +33,15 @@ h1#nome-comercial {
     color: var(--branco);
     font-weight: 500;
     font-size: 1rem;
+    & > span {
+        color: var(--branco);
+    }
+}
+h1#nome-comercial::selection{
+    color: rgb(0, 255, 255);
+}
+h1#nome-comercial span::selection {
+    color: rgb(0, 153, 255);
 }
 nav#menu-desktop {
     position: absolute;
