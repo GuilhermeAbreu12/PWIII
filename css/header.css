@@ -1,0 +1,51 @@
+header {
+    height: 60px;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+#espaco-logo {
+    width: min-content;
+    padding: .2rem .3rem;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    background-color: darkblue;
+}
+h1#nome-comercial {
+    color: white;
+    font-weight: 500;
+    font-size: 1rem;
+}
+nav {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    display: flex;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    background-color: darkblue;
+    border-radius: 8px;
+}
+nav ul li {
+    padding: .5rem 1rem;
+    border: 1px solid transparent;
+    color: white;
+    border-radius: 8px;
+}
+nav ul li:hover {
+    background-color: blue;
+}
