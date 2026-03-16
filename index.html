@@ -8,20 +8,38 @@
     <link rel="stylesheet" href="css/gerais.css">
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/proximosJogos.css">
+    <link rel="stylesheet" href="css/responsivo.css">
 </head>
 <body>
     
     <header>
-        <div id="espaco-logo">
+        <div id="espaco-logo" class="espaco-logo visible">
             <img id="logo" src="imgs/ball3.svg" alt="Uma bola de futebol, logotipo do EsporteHub">
             <h1 id="nome-comercial">EsporteHub</h1>
         </div>
-        <nav>
+        <nav id="menu-desktop">
             <ul>
                 <li>Página Geral</li>
                 <li>Modalidades</li>
             </ul>
         </nav>
+        <div id="menu-mobile-container">
+            <ul>
+                <li>Página Geral</li>
+                <li>Modalidades</li>
+            </ul>
+        </div>
+        <button id="menu-mobile">
+            <div id="menu-hamburguer-icon" class="visible">
+                <div class="menu-hamburguer-linha"></div>
+                <div class="menu-hamburguer-linha"></div>
+                <div class="menu-hamburguer-linha"></div>
+            </div>
+            <div id="menu-x-icon">
+                <div class="menu-x-linha" id="menu-x-linha1"></div>
+                <div class="menu-x-linha" id="menu-x-linha2"></div>
+            </div>
+        </button>
     </header>
     <h2 id="titulo-pagina">Próximos jogos</h2>
     <main class="container-quadros">
@@ -59,5 +77,6 @@
             </div>
         </div>
     </main>
+    <script src="js/menuMobile.js" defer></script>
 </body>
 </html>
