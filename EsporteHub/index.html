@@ -4,79 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EsporteHub</title>
-    <link rel="shortcut icon" href="imgs/logotipo.png" type="image/x-icon">
     <link rel="stylesheet" href="css/gerais.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/proximosJogos.css">
-    <link rel="stylesheet" href="css/responsivo.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="shortcut icon" href="imgs/logotipo.png" type="image/x-icon">
 </head>
 <body>
-    <div class="centerLine"></div>
     <header>
         <div id="espaco-logo" class="espaco-logo visible">
             <img id="logo" src="imgs/ball3.svg" alt="Uma bola de futebol, logotipo do EsporteHub">
             <h1 id="nome-comercial">Esporte<span>Hub</span></h1>
         </div>
-        <nav id="menu-desktop">
-            <ul>
-                <li>Página Geral</li>
-                <li>Modalidades</li>
-            </ul>
-        </nav>
-        <div id="menu-mobile-container">
-            <ul>
-                <li>Página Geral</li>
-                <li>Modalidades</li>
-            </ul>
-        </div>
-        <button id="menu-mobile">
-            <div id="menu-hamburguer-icon" class="visible">
-                <div class="menu-hamburguer-linha"></div>
-                <div class="menu-hamburguer-linha"></div>
-                <div class="menu-hamburguer-linha"></div>
-            </div>
-            <div id="menu-x-icon">
-                <div class="menu-x-linha" id="menu-x-linha1"></div>
-                <div class="menu-x-linha" id="menu-x-linha2"></div>
-            </div>
-        </button>
     </header>
-    <h2 id="titulo-pagina">Próximos jogos</h2>
-    <main class="container-quadros">
-        <div id="quadro1-jogos" class="quadro-jogos">
-            <p class="inf-jogo">Vôlei - 19/02 - 13h</p>
-            <div class="quadro-cards-times">
-                <div class="card-time">
-                    <img src="imgs/times/time1.svg" alt="Logotipo do time" class="time-logo">
-                </div>
-                <div class="card-time">
-                    <img src="imgs/times/time2.svg" alt="Logotipo do time" class="time-logo">
-                </div>
+    <div id="background-form">
+        <form action="home.html" method="POST">
+            <div id="nome-escola">
+                <label for="input-nome">Nome da escola:</label>
+                <input type="text" id="input-nome" placeholder="Nome da escola">
             </div>
-            <div class="container-nome-times">
-                <div class="primeiro-time"><p>Flamengo</p></div>
-                <div class="versus"><p>VS</p></div>
-                <div class="segundo-time"><p>Palmeiras</p></div>
-            </div>
-        </div>
         
-        <div id="quadro2-jogos" class="quadro-jogos">
-            <p class="inf-jogo">Vôlei - 19/02 - 13h</p>
-            <div class="quadro-cards-times">
-                <div class="card-time">
-                    <img src="imgs/times/time2.svg" alt="Logotipo do time" class="time-logo">
-                </div>
-                <div class="card-time">
-                    <img src="imgs/times/time1.svg" alt="Logotipo do time" class="time-logo">
-                </div>
+            <div id="codigo-escola">
+                <label for="input-codigo-escola">Código da escola:</label>
+                <input type="text" id="input-codigo-escola" placeholder="Código da escola">
             </div>
-            <div class="container-nome-times">
-                <div class="primeiro-time"><p>Flamengo</p></div>
-                <div class="versus"><p>VS</p></div>
-                <div class="segundo-time"><p>Palmeiras</p></div>
+            <div id="senha-escola">
+                <label for="input-senha">Senha:</label>
+                <input type="password" id="input-senha" placeholder="Senha">
             </div>
-        </div>
-    </main>
-    <script src="js/menuMobile.js" defer></script>
+            <div id="formas-entrada">
+                <button type="submit">Entrar</button>
+                <p>Não tem uma conta? <a href="#">Crie uma aqui.</a></p>
+            </div>
+        </form>
+    </div>
 </body>
 </html>
