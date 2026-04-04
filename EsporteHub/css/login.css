@@ -6,10 +6,11 @@ body {
     align-items: center;
 }
 header{
-    height: 40px;
+    height: 50px;
     width: 100%;
-    margin-bottom: 1rem;
-    position: relative;
+    padding: 10px 0;
+    position: absolute;
+    top: 0px;
 }
 #background-form {
     height: 70vh;

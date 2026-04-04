@@ -8,12 +8,45 @@
 </head>
 <body>
     <div class="centerLine"></div>
+    <header>
         <div id="espaco-logo" class="espaco-logo visible">
             <a href="home.html">
                 <img id="logo" src="/imgs/ball3.svg" alt="Uma bola de futebol, logotipo do EsporteHub">
                 <h1 id="nome-comercial">Esporte<span>Hub</span></h1>
             </a>
         </div>
+        <nav id="menu-desktop">
+            <ul>
+                <a href="home.html">
+                    <li>Página Inicial</li>
+                </a>
+                <a href="geral.html">
+                    <li>Dados Gerais</li>
+                </a>
+            </ul>
+        </nav>
+        <div id="menu-mobile-container">
+            <ul>
+                <a href="home.html">
+                    <li>Página Inicial</li>
+                </a>
+                <a href="geral.html">
+                    <li>Dados Gerais</li>
+                </a>
+            </ul>
+        </div>
+        <button id="menu-mobile">
+            <div id="menu-hamburguer-icon" class="visible">
+                <div class="menu-hamburguer-linha"></div>
+                <div class="menu-hamburguer-linha"></div>
+                <div class="menu-hamburguer-linha"></div>
+            </div>
+            <div id="menu-x-icon">
+                <div class="menu-x-linha" id="menu-x-linha1"></div>
+                <div class="menu-x-linha" id="menu-x-linha2"></div>
+            </div>
+        </button>
+    </header>
     <script src="/js/menuMobile.js" defer></script>
 </body>
 </html>

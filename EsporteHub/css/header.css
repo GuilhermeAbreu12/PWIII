@@ -11,10 +11,13 @@ header.menu-open{
 /* Espaco-logo está em gerais.css*/
 
 nav#menu-desktop {
+    min-width: 60%;
+    justify-content: center;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    font-size: .9rem;
     
     display: none;
 }
@@ -102,7 +105,7 @@ nav#menu-desktop ul li:hover {
     height: 100%;
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
 }
 #menu-mobile-container ul li {
     height: 100%;
