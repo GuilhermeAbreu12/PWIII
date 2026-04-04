@@ -50,6 +50,9 @@ body {
 .espaco-logo.visible {
     z-index: 0;
 }
+.espaco-logo a {
+    display: contents;
+}
 h1#nome-comercial {
     color: var(--branco);
     font-weight: 500;
@@ -63,4 +66,7 @@ h1#nome-comercial::selection{
 }
 h1#nome-comercial span::selection {
     color: rgb(0, 153, 255);
+}
+a {
+    text-decoration: none;
 }
