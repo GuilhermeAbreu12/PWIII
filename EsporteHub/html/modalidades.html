@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EsporteHub</title>
     <link rel="shortcut icon" href="/imgs/logotipo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/css/global.css">
+    <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/modalidades.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/responsivo.css">
 </head>
 <body>
     <div class="centerLine"></div>
@@ -49,6 +52,8 @@
             </div>
         </button>
     </header>
+    
+    <main id="modalidades-container">
         <div id="selecionar-esporte-container">
             <form>
                 <div class="esporte-label-input" id="esporte01-container">
@@ -76,6 +81,26 @@
                 </div>
             </form>
         </div>
+
+        <table>
+            <caption id="nome-modalidade">Modalidade: Futebol</caption>
+            <tbody>
+                <tr>
+                    <td colspan="2">Time 1</td>
+                    <td colspan="4">18 jogadores cadastrados</td>
+                    <td colspan="2"><button class="botao-estilo01">Ver</button></td>
+                    <td colspan="2"><button class="botao-estilo01">Editar</button></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Time 2</td>
+                    <td colspan="4">12 jogadores cadastrados</td>
+                    <td colspan="2"><button class="botao-estilo01">Ver</button></td>
+                    <td colspan="2"><button class="botao-estilo01">Editar</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <button id="botao-novo-time" class="botao-estilo01">Criar novo time</button>
+    </main>
     <footer>
         &copy; 2026. Criado e desenvolvido por Guilherme Abreu, João Pedro e Letícia
     </footer>
