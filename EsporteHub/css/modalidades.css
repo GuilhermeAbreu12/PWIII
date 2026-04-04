@@ -1,1 +1,50 @@
+#modalidades-container {
+    width: min-content;
+    height: 50vh;
+    display: flex;
     flex: 1;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+#selecionar-esporte-container, form {
+    display: flex;
+    gap: 8px;
+    justify-content: end;
+}
+#selecionar-esporte-container .esporte-label-input {
+    padding: 2px 4px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+#selecionar-esporte-container #esporte02-container, #selecionar-esporte-container #esporte04-container {
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: #3332;
+}
+
+/* Esconde o checkbox original */
+input[type="checkbox"]{
+    display: none;
+}
+/* Estiliza o label como uma caixa */
+label {
+    height: 15px;
+    width: 15px;
+    min-width: 15px;
+    border: 1px solid #333;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    display: inline-block;
+    background-color: white;
+}
+/* Cria o "check" dentro do label quando o checkbox está marcado */
+input[type="checkbox"]:checked + label {
+    background-color: darkblue;
+    background: radial-gradient( circle at top left, white, 5px, darkblue);
+    color: white;
+}
+
