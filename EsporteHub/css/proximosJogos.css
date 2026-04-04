@@ -7,8 +7,10 @@ h2#titulo-pagina {
     color: var(--preto);
 }
 .container-quadros{
-    height: 70vh;
+    min-height: 70vh;
     width: min(60%, 600px);
+    padding-bottom: 1rem;
+    flex: 1;
     justify-self: center;
 }
 .quadro-jogos{
