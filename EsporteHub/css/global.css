@@ -11,7 +11,7 @@
 :root {
     --azul-escuro01: darkblue;
     --cor-primaria: blue;
-    --cor-bg: rgb(233, 235, 254);
+    --cor-bg: rgb(255, 255, 255);
     --branco: white;
     --preto: black;
     --branco02: gainsboro;
@@ -26,13 +26,13 @@
     display: none;
 }
 body {
-    min-height: 100vh;
+    min-height: 100dvh;
     max-width: 100vw;
     background-color: var(--cor-bg);
 }
 .espaco-logo {
     width: min-content;
-    padding: .2rem .3rem;
+    padding: .2rem .5rem;
     border: 1px solid transparent;
     border-radius: 4px;
     z-index: -2;
