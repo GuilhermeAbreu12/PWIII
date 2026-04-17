@@ -22,6 +22,18 @@ function toggleMenu() {
     menuMobileContainer.classList.toggle('visible')
     header.classList.toggle('menu-open')
     espacoLogotipo.classList.toggle('visible')
+}
+
+function closeMenu() {
+    btnAbrirMenu.classList.add('visible')
+    btnFecharMenu.classList.remove('visible')
+    menuMobileContainer.classList.remove('visible')
+    header.classList.remove('menu-open')
+    espacoLogotipo.classList.remove('visible')
+}
+
+btnMenuIcon.addEventListener('click', toggleMenu)
+
 window.addEventListener('resize', () => {
     if (window.innerWidth >= MOBILE_BREAKPOINT) {
         closeMenu()
