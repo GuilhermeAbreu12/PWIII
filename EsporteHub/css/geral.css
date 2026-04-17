@@ -1,5 +1,20 @@
+#menu-mobile-container {
+    width: 100%;
+}
 #menu-mobile-container ul {
+    /*
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    */
+    gap: 8px;
     grid-template-columns: 2fr 2fr 1fr;
+}
+#menu-mobile-container ul li {
+    flex: 0 0 auto;
+    padding: 4px;
 }
 main {
     width: 100%;
@@ -94,7 +109,7 @@ td:last-child {
     nav#menu-desktop {
         display: flex;
     }
-    #menu-mobile {
+    #menu-mobile, #menu-mobile-container {
         display: none;
     }
 }
