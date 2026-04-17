@@ -1,0 +1,25 @@
+main {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+table {
+    width: 80%;
+    text-align: center;
+}
+td {
+    padding: .5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    overflow-x: auto;
+}
+
+ul.lista-meritos-jogador {
+    text-align: center;
+    & li {
+        display: inline-block;
+    }
+}
+td::-webkit-scrollbar {
+    display: none;
+}
