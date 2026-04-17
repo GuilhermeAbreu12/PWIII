@@ -1,3 +1,11 @@
+@media (min-width: 800px){
+    #banner-login {
+        display: flex;
+    }
+    #form-login {
+        width: 40%;
+    }
+}
 @media (min-width: 580px){
     nav#menu-desktop {
         display: flex;
