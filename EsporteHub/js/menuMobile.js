@@ -5,10 +5,25 @@ const menuMobileContainer = document.querySelector('#menu-mobile-container')
 const header = document.querySelector('header')
 const espacoLogotipo = document.querySelector('#espaco-logo')
 
-btnMenuIcon.addEventListener('click', ()=> {
+let breakpointPadrao = 580
+// Se a tela for a geral, os limites do menu mudam.
+if (window.location.href.includes('geral.html') || window.location.href.includes('jogadores.html')){
+    breakpointPadrao = 873
+    console.log('Passou dentro')
+} else console.log('Passou fora')
+// Define o limite com base no resultado anterior.
+const MOBILE_BREAKPOINT = breakpointPadrao
+
+function toggleMenu() {
+    if (window.innerWidth >= MOBILE_BREAKPOINT) return
+
     btnAbrirMenu.classList.toggle('visible')
     btnFecharMenu.classList.toggle('visible')
     menuMobileContainer.classList.toggle('visible')
     header.classList.toggle('menu-open')
     espacoLogotipo.classList.toggle('visible')
+window.addEventListener('resize', () => {
+    if (window.innerWidth >= MOBILE_BREAKPOINT) {
+        closeMenu()
+    }
 })
