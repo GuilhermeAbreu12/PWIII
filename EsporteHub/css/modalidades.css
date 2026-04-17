@@ -91,3 +91,12 @@ td:last-child {
 button#botao-novo-time {
     align-self: center;
 }
+button#botao-excluir-time {
+    background-color: rgb(221, 0, 0);
+    border-color: rgb(199, 0, 0);
+}
+button.botao-estilo01#botao-excluir-time:hover {
+    background-color: rgb(250, 0, 0);
+    border-color: red;
+    box-shadow: 0 0 10px rgb(139, 0, 0);
+}
