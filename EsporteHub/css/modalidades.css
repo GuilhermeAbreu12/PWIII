@@ -71,6 +71,11 @@ td {
 td:last-child {
     border-right: 0;
 }
+#container-acoes-time {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
 .botao-estilo01 {
     min-height: 30px;
     min-width: 60px;
