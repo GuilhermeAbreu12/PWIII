@@ -37,11 +37,14 @@ nav#menu-desktop ul li:hover {
     transition: .7s;
     background-color: var(--cor-primaria);
 }
+
 #menu-mobile {
-    height: 38px;
+    height: 40px;
     width: 40px;
     margin: 10px 10px 0;
     z-index: 2;
+    position: absolute;
+    right: 0;
     background-color: var(--azul-escuro01);
     border: 1px solid transparent;
     border-radius: 8px;
@@ -90,9 +93,13 @@ nav#menu-desktop ul li:hover {
     transform: rotate(-50deg);
 }
 #menu-mobile-container {
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
     width: 100%;
     z-index: 1;
+    background-color: var(--azul-escuro01);
 
     transition: .7s;
     transform: translateY(-100%);
